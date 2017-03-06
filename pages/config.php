@@ -28,7 +28,7 @@ $formElements[] = $n;
 $n = [];
 $n['label'] = '<label for="rex-piwik-config-ids">' . $this->i18n('config_ids') . '</label>';
 $select = new rex_select();
-$select->setId('rex-piwik-config-ids');
+$select->setId('rex-lightgallery-config-ids');
 $select->setMultiple();
 $select->setAttribute('class', 'form-control');
 $select->setName('config[ids][]');
