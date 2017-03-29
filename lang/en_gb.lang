@@ -1,1 +1,30 @@
+# Da R5 nur noch mit UTF8 arbeitet, entfällt der "utf8"-Suffix
+# Die Keys sollten mit dem Addonnamen beginnen, da sie so innerhalb des Addons vereinfacht abgefragt werden können
+
+# Addon
+
+piwik_title = piwik
+
+
+# Pages (LINKS)
+
+piwik_info = Info
+piwik_help = Hilfe
+piwik_help_template = Hilfe (Template)
+piwik_license = Lizenz
+
+
+# Page:CONFIG (CONTENT)
+
+piwik_config = Einstellungen
+piwik_config_url = URL
+piwik_config_ids = IDs
+piwik_config_save = Einstellungen speichern
+piwik_config_saved = Einstellungen wurden gespeichert!
+
+
+# Benennung für die Addonrechte, sichtbar innerhalb der REDAXO-Administration unter Benutzer > Rollen > Allgemein
+
+perm_general_piwik[] = Rechte für Piwik-Addon
+perm_general_piwik[config] = Rechte für Piwik-Addon-Konfiguration
 

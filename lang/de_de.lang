@@ -25,5 +25,5 @@ piwik_config_saved = Einstellungen wurden gespeichert!
 
 # Benennung für die Addonrechte, sichtbar innerhalb der REDAXO-Administration unter Benutzer > Rollen > Allgemein
 
-perm_general_piwik[] = Rechte für LightGallery-Addon
-perm_general_piwik[config] = Rechte für LightGallery-Addon-Konfiguration
+perm_general_piwik[] = Rechte für Piwik-Addon
+perm_general_piwik[config] = Rechte für Piwik-Addon-Konfiguration

@@ -33,9 +33,10 @@ $content_collapse1 = '
 $content_collapse1 .= rex_string::highlight(rex_file::get(rex_path::addon('piwik','pages/help_template.inc')));
 
 $fragment = new rex_fragment();
+$fragment->setVar('collapse', true, false);
+$fragment->setVar('collapsed', true, false);
+$fragment->setVar('class', 'default', false);
 $fragment->setVar('title', $this->i18n('help_template'), false);
-$fragment->setVar('collapse', $content_collapse1, false);
-$fragment->setVar('class', 'default collapsed', false);
 $fragment->setVar('body', $content_collapse1, false);
 echo $fragment->parse('core/page/section.php');
 // Fragment - ENDE
