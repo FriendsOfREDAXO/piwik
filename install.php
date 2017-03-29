@@ -30,11 +30,13 @@ if ($somethingIsWrong) {
 
 // SQL :: rex_template => tpl : addon piwik (js)
 $template = rex_sql::factory();
-#$template->setDebug();
+$template->setDebug();
 $template->setTable(rex::getTablePrefix().'template');
-$template->setQuery("SELECT * FROM rex_template WHERE name LIKE '%tpl : addon piwik (js)%'");
+#$template->setQuery("SELECT * FROM rex_template WHERE name LIKE '%tpl : addon piwik (js)%'");
+$template->setQuery("SELECT * FROM rex_template WHERE content LIKE '%TEMPLATE | PIWIK%'");
 
 try {
+        $template->setValue('content',rex_file::get(rex_path::addon('piwik','pages/help_template_install.inc')));
 
     if ( $template->getRows() != 0 ) {
 
@@ -42,7 +44,6 @@ try {
 
         $template_id = $template->getValue('id');
         $template->setWhere(['id' => $template_id]);
-        $template->setValue('content',rex_file::get(rex_path::addon('piwik','pages/help_template_install.inc')));
 
         $template->update();
 
@@ -53,7 +54,6 @@ try {
         $template->setTable(rex::getTablePrefix().'template');
 
         $template->setValue('name', 'tpl : addon piwik (js)');
-        $template->setValue('content',rex_file::get(rex_path::addon('piwik','pages/help_template_install.inc')));
 
         $template->insert();
 
