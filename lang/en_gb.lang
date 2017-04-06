@@ -13,6 +13,10 @@ piwik_help = Hilfe
 piwik_help_template = Hilfe (Template)
 piwik_license = Lizenz
 
+piwik_template_install_description = piwik Template - Update / Installation
+piwik_template_update = piwik Template - Update
+piwik_template_install = piwik Template - Installation
+
 
 # Page:CONFIG (CONTENT)
 

@@ -1,7 +1,7 @@
 
-**29.03.2017 Version 0.2**
+**29.03.2017 Version 0.1.2**
 
-- Kleine Anpassungen
+- Kleine Anpassungen (template wird nicht mehr automatisch installiert!)
 
 **07.03.2017 Version 0.1.1**
 
